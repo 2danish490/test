@@ -1,0 +1,94 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 40px;
+    color: #000;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+h1 span {
+    font-size: 20px;
+    color: gray;
+}
+
+p {
+    margin: 20px 0;
+}
+
+.section {
+    margin-bottom: 40px;
+}
+
+.contact, .teams {
+    margin-top: 20px;
+}
+
+.contact li, .teams li {
+    list-style-type: none;
+    margin: 5px 0;
+}
+
+.contact li a, .teams li span {
+    text-decoration: none;
+    color: #000;
+}
+
+.teams li {
+    display: flex;
+    justify-content: space-between;
+}
+
+.teams li span {
+    color: gray;
+}
+
+.square {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    margin-right: 10px;
+}
+
+.square.red { background: red; }
+.square.blue { background: blue; }
+.square.black { background: black; }
+.square.purple { background: purple; }
+.square.gray { background: gray; }
+
+footer {
+    margin-top: 40px;
+    font-size: 12px;
+}
+@media screen and (max-width: 400px){
+    h1{
+        font-size: auto;
+        margin-bottom: auto;
+    }
+    h1 span {
+        font-size: auto;
+        color: gray;
+    }
+}
+@media screen and (max-width: 768px){
+    .section {
+        margin-bottom: auto;
+    }
+    
+    .contact, .teams {
+        margin-top: auto;
+    }
+    
+    .contact li, .teams li {
+        list-style-type: none;
+        margin: 0, auto;
+    }
+    
+    .contact li a, .teams li span {
+        text-decoration: none;
+        color: #000;
+    }
+}
